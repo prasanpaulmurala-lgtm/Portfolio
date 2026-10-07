@@ -12,11 +12,12 @@ body {
     color: #333;
 }
 
+
 /* ================= NAVIGATION ================= */
 
 header {
     background: #111;
-    padding: 15px 8%;
+    padding: 10px 8%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -28,26 +29,31 @@ nav {
     align-items: center;
 }
 
-.logo {
-    color: white;
-    font-size: 30px;
-}
-.brand { 
-    display: flex; 
-    align-items: center; 
-    gap: 20px; 
+/* Logo + Website Name */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.brand img { 
-    width: 100px; 
-    height: 100px; 
-    object-fit: contain; 
-    border-radius: 50%; 
+.brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    white-space: nowrap;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 nav ul li {
@@ -71,10 +77,13 @@ nav ul li a:hover {
 .home {
     min-height: 90vh;
     padding: 60px 8%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 60px;
+
     background: #222;
     color: white;
 }
@@ -85,6 +94,7 @@ nav ul li a:hover {
 
 .home-content h1 {
     font-size: 50px;
+    line-height: 1.2;
 }
 
 .home-content h1 span {
@@ -92,7 +102,7 @@ nav ul li a:hover {
 }
 
 .home-content h2 {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 30px;
 }
 
@@ -102,7 +112,7 @@ nav ul li a:hover {
 }
 
 
-/* Profile Image */
+/* ================= PROFILE IMAGE ================= */
 
 .img {
     width: 350px;
@@ -114,20 +124,28 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     border-radius: 50%;
     border: 5px solid #00adb5;
 }
 
 
-/* Button */
+/* ================= BUTTON ================= */
 
 .btn {
     display: inline-block;
+
     padding: 12px 25px;
+
+    margin: 5px;
+
     background: #00adb5;
     color: white;
+
     text-decoration: none;
+
     border-radius: 5px;
+
     transition: 0.3s;
 }
 
@@ -180,15 +198,21 @@ section {
 
 .skill {
     background: white;
+
     padding: 15px 30px;
+
     border-radius: 5px;
+
     box-shadow: 0 3px 10px #ccc;
+
     transition: 0.3s;
 }
 
 .skill:hover {
     transform: translateY(-5px);
+
     background: #00adb5;
+
     color: white;
 }
 
@@ -197,18 +221,27 @@ section {
 
 .project-container {
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
 .project {
     background: white;
+
     width: 300px;
+
     padding: 25px;
+
     text-align: center;
+
     border-radius: 8px;
+
     box-shadow: 0 3px 10px #ccc;
+
     transition: 0.3s;
 }
 
@@ -226,12 +259,19 @@ section {
 
 .project-btn {
     display: inline-block;
+
     margin-top: 15px;
+
     padding: 10px 20px;
+
     background: #00adb5;
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 5px;
+
     transition: 0.3s;
 }
 
@@ -244,35 +284,52 @@ section {
 
 form {
     max-width: 600px;
+
     margin: auto;
+
     display: flex;
+
     flex-direction: column;
+
     gap: 15px;
 }
 
 input,
 textarea {
     width: 100%;
+
     padding: 15px;
+
     border: 1px solid #ccc;
+
     border-radius: 5px;
+
     font-size: 16px;
+
     font-family: Arial, sans-serif;
 }
 
 textarea {
     height: 150px;
+
     resize: vertical;
 }
 
 button {
     padding: 15px;
+
     border: none;
+
     background: #00adb5;
+
     color: white;
+
     font-size: 16px;
+
     cursor: pointer;
+
     border-radius: 5px;
+
     transition: 0.3s;
 }
 
@@ -285,21 +342,29 @@ button:hover {
 
 footer {
     background: #111;
+
     color: white;
+
     text-align: center;
+
     padding: 35px 20px;
 }
 
 footer h3 {
     font-size: 25px;
+
     margin-bottom: 20px;
 }
 
 .footer-contact {
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 30px;
+
     margin-bottom: 25px;
 }
 
@@ -309,6 +374,7 @@ footer h3 {
 
 .footer-contact a {
     color: #00adb5;
+
     text-decoration: none;
 }
 
@@ -318,22 +384,48 @@ footer h3 {
 
 .copyright {
     border-top: 1px solid #444;
+
     padding-top: 20px;
+
     margin-top: 20px;
+
     font-size: 14px;
 }
 
 
-/* ================= TABLET ================= */
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
 
 @media (max-width: 900px) {
 
     header {
-        padding: 15px 5%;
+        padding: 10px 5%;
     }
+
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+
+    /* Home */
 
     .home {
         padding: 50px 5%;
+
         gap: 35px;
     }
 
@@ -356,30 +448,45 @@ footer h3 {
 }
 
 
-/* ================= MOBILE ================= */
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
 
 @media (max-width: 700px) {
 
     /* Navigation */
 
     header {
-        padding: 15px 20px;
+        padding: 10px 20px;
     }
 
     nav {
         flex-direction: column;
-        gap: 15px;
+
+        gap: 12px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 45px;
+        height: 45px;
     }
 
     .logo {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     nav ul {
         width: 100%;
+
         justify-content: center;
+
         flex-wrap: wrap;
-        gap: 10px;
+
+        gap: 8px;
     }
 
     nav ul li {
@@ -387,7 +494,7 @@ footer h3 {
     }
 
     nav ul li a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 
@@ -395,9 +502,13 @@ footer h3 {
 
     .home {
         min-height: auto;
+
         padding: 60px 20px;
+
         flex-direction: column;
+
         text-align: center;
+
         gap: 30px;
     }
 
@@ -406,31 +517,44 @@ footer h3 {
     }
 
     .home-content h1 {
-        font-size: 32px;
+        font-size: 30px;
+
         line-height: 1.3;
     }
 
     .home-content h2 {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     .home-content p {
         font-size: 15px;
+
         margin: 15px auto 25px;
     }
 
 
-    /* Image */
+    /* Profile Image */
 
     .img {
         width: 220px;
         height: 220px;
+
         order: -1;
     }
 
     .img img {
-        width: 100%;
-        height: 100%;
+        border-width: 4px;
+    }
+
+
+    /* Buttons */
+
+    .btn {
+        padding: 11px 20px;
+
+        font-size: 14px;
+
+        margin: 5px 3px;
     }
 
 
@@ -442,6 +566,7 @@ footer h3 {
 
     .title {
         font-size: 30px;
+
         margin-bottom: 30px;
     }
 
@@ -458,7 +583,10 @@ footer h3 {
 
     .about-content p {
         font-size: 15px;
+
         line-height: 1.7;
+
+        text-align: justify;
     }
 
 
@@ -469,7 +597,8 @@ footer h3 {
     }
 
     .skill {
-        padding: 12px 20px;
+        padding: 11px 17px;
+
         font-size: 14px;
     }
 
@@ -478,11 +607,13 @@ footer h3 {
 
     .project-container {
         flex-direction: column;
+
         align-items: center;
     }
 
     .project {
         width: 100%;
+
         max-width: 400px;
     }
 
@@ -507,6 +638,7 @@ footer h3 {
 
     .footer-contact {
         flex-direction: column;
+
         gap: 10px;
     }
 
@@ -516,21 +648,35 @@ footer h3 {
 }
 
 
-/* ================= SMALL MOBILE ================= */
+/* ================================================= */
+/* ============== SMALL MOBILE ==================== */
+/* ================================================= */
 
 @media (max-width: 400px) {
 
+    header {
+        padding: 8px 15px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
     .logo {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     nav ul {
-        gap: 6px;
+        gap: 5px;
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 11px;
     }
+
+
+    /* Home */
 
     .home {
         padding: 45px 15px;
@@ -542,24 +688,51 @@ footer h3 {
     }
 
     .home-content h1 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .home-content h2 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .home-content p {
         font-size: 14px;
     }
 
+
+    /* Buttons */
+
+    .btn {
+        display: block;
+
+        width: 100%;
+
+        max-width: 220px;
+
+        margin: 8px auto;
+    }
+
+
+    /* Section title */
+
     .title {
         font-size: 27px;
     }
 
+
+    /* Skills */
+
     .skill {
-        padding: 10px 15px;
-        font-size: 13px;
+        padding: 9px 13px;
+
+        font-size: 12px;
+    }
+
+
+    /* Project */
+
+    .project {
+        padding: 20px;
     }
 }
 
