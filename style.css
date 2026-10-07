@@ -30,7 +30,19 @@ nav {
 
 .logo {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
+}
+.brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.brand img { 
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
+    border-radius: 50%; 
 }
 
 nav ul {
